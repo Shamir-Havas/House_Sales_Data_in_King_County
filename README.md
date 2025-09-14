@@ -1,7 +1,7 @@
-House Sales Data in King County – Regression Analysis
+<b>House Sales Data in King County – Regression Analysis</b>
 
-[Colab Badge: Open in Colab]
-(Link will be updated after uploading to GitHub)
+ Open in Colab
+
 
 ------------------------------------------------------------
 Project Overview
