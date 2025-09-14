@@ -1,4 +1,4 @@
-)
+
 🏡 House Price Prediction – King County
 
 This project explores house sales data from King County, USA, applying data science techniques to analyze housing trends and build predictive models. It demonstrates my skills in exploratory data analysis (EDA), data visualization, feature engineering, and machine learning—essential tools for real-world data science.
