@@ -34,10 +34,8 @@ Communication of Insights
 
 <b>📂 Repository Structure</b>
 
-House_Sales_Data_in_King_County.ipynb   # Jupyter notebook with full workflow
-README.md                               # Project overview (this file)
-data/                                   # (Optional) Dataset reference
-
+House_Sales_Data_in_King_County.ipynb  
+README.md                               
 <b>🎯 Why This Project Matters</b>
 
 This project highlights end-to-end data science skills—from raw data cleaning to building predictive models—making it a strong showcase of my ability to handle real-world datasets as a fresher data scientist.
