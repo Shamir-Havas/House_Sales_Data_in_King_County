@@ -56,9 +56,7 @@ Results (R² Scores)
 How to Run
 ------------------------------------------------------------
 1. Clone the repository:
-   git clone https://github.com/YourUsername/YourRepoName.git
-   cd YourRepoName
-
+   
 2. Open the notebook in Google Colab (or Jupyter Notebook).
 
 3. Run the cells step by step.
