@@ -1,54 +1,123 @@
+# 🏡 House Sales Data in King County  
 
-<b>🏡 House Price Prediction – King County</b>
+## 📌 Project Overview  
+This project analyzes the **King County House Sales dataset** to explore relationships between house features and sale price.  
+It demonstrates a complete **end-to-end data science workflow**, including:  
 
-This project explores house sales data from King County, USA, applying data science techniques to analyze housing trends and build predictive models. It demonstrates my skills in exploratory data analysis (EDA), data visualization, feature engineering, and machine learning—essential tools for real-world data science.
+- Data cleaning & preprocessing with **Pandas/Numpy**  
+- Exploratory Data Analysis (EDA) with **Matplotlib/Seaborn**  
+- Feature engineering & transformation (Polynomial features, derived variables)  
+- Regression modeling with **Scikit-Learn** (Linear, Polynomial, Ridge)  
+- Model evaluation using **R², RMSE, MAE**  
+- Communicating results with clear visuals  
 
-<b>🚀 Project Highlights</b>
+The goal is to **predict housing prices** and showcase strong skills in **data analysis, machine learning, and model evaluation**.  
 
-Data Wrangling & Cleaning – handled missing values, transformed data types, and prepared the dataset for modeling.
+---
 
-Exploratory Data Analysis (EDA) – discovered patterns in price distribution, correlations with location, bedrooms, bathrooms, and square footage.
+## 📊 Dataset  
+- Source: [King County House Sales Dataset (Kaggle)](https://www.kaggle.com/harlfoxem/housesalesprediction)  
+- Records: ~21,000 house sales in King County, USA  
+- Features: Bedrooms, bathrooms, living space, lot size, floors, waterfront, view, condition, grade, year built, renovated year, zipcode, latitude/longitude, and sale price  
 
-Data Visualization – used plots to showcase price trends, outlier detection, and feature importance.
+### 🔎 Dataset Preview  
+![Dataset Preview](images/dataset_head.png)  
+*A sample of the King County dataset*  
 
-Feature Engineering – created new features (e.g., age of house, renovated flag) to improve model performance.
+---
 
-Machine Learning – applied regression models to predict housing prices and evaluated performance with metrics like RMSE and R².
+## 🔬 Exploratory Data Analysis (EDA)  
 
-Actionable Insights – identified key drivers of house prices that could guide buyers, sellers, and policymakers.
+### Distribution of House Prices  
+![Price Distribution](images/price_dist.png)  
 
-<b>🛠️ Skills Demonstrated</b>
+### Correlation Heatmap  
+![Correlation Heatmap](images/corr_heatmap.png)  
 
-Python for Data Science (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+### sqft_living vs Price  
+![Sqft vs Price](images/sqft_vs_price.png)  
 
-Data Wrangling & Preprocessing
+---
 
-Exploratory Data Analysis & Visualization
+## ⚙️ Feature Engineering  
+- Created derived features such as **house age** and **renovation flag**  
+- Applied **Polynomial Features** to capture nonlinear relationships  
 
-Feature Engineering
+![Feature Engineering](images/feature_engineering.png)  
 
-Regression Modeling & Model Evaluation
+---
 
-Communication of Insights
+## 🤖 Modeling Approach  
 
+Models implemented:  
+1. **Simple Linear Regression** (using sqft_living only)  
+2. **Multiple Linear Regression** (using all features)  
+3. **Polynomial Regression (degree=2)**  
+4. **Ridge Regression** (regularized linear model)  
+5. **Ridge + Polynomial Regression**  
 
-<b>📂 Repository Structure</b>
+---
 
-House_Sales_Data_in_King_County.ipynb  
-README.md                 
+## 📈 Results  
 
-<b>🎯 Why This Project Matters</b>
+| Model                          | R²   | Notes |
+|--------------------------------|------|------------------------------|
+| Simple Linear (sqft_living)    | 0.49 | Baseline |
+| Multiple Linear Regression     | 0.66 | Improved with more features |
+| Polynomial Regression (deg=2)  | 0.75 | Captures nonlinear patterns |
+| Ridge Regression               | 0.65 | Regularization reduces overfit |
+| Ridge + Polynomial Regression  | 0.70 | Balanced complexity & regularization |
 
-This project highlights end-to-end data science skills—from raw data cleaning to building predictive models—making it a strong showcase of my ability to handle real-world datasets as a fresher data scientist.
+### Model Performance Comparison  
+![Model Performance](images/model_performance.png)  
 
-<b>🔮 Future Improvements</b>
+### Predicted vs Actual (Best Model)  
+![Predicted vs Actual](images/pred_vs_actual.png)  
 
-Experiment with advanced ML models (Random Forest, XGBoost, Gradient Boosting)
+---
 
-Deploy a simple web app for price prediction
+## ✅ Key Learnings  
+- Increasing model complexity (polynomial features) significantly improved performance.  
+- Regularization (Ridge) helped reduce overfitting but slightly reduced R² compared to plain polynomial regression.  
+- Visualization and EDA revealed strong correlations between **sqft_living, grade, and location** with house prices.  
 
-Automate feature selection and hyperparameter tuning
+---
 
-<b>✨ Key Takeaway</b>
+## 🚀 Future Improvements  
+- Experiment with **tree-based models** (Random Forest, XGBoost, LightGBM)  
+- Perform **hyperparameter tuning** (GridSearchCV/RandomizedSearchCV)  
+- Add **geospatial features** (distance to city center, neighborhood clusters)  
+- Build an interactive **prediction app** with Streamlit or Dash  
+- Apply **SHAP values** for model interpretability  
 
-This project demonstrates how a data scientist can turn raw housing data into valuable insights and predictive models, bridging the gap between data and decision-making.
+---
+
+## 🛠️ Tech Stack  
+- **Language**: Python  
+- **Libraries**: Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn  
+- **Environment**: Jupyter Notebook  
+
+---
+
+## 📂 Project Structure  
+
+├── House_Sales_Data_in_King_County.ipynb # Main analysis notebook
+├── data/ # Dataset (not included here, link to Kaggle)
+├── images/ # Screenshots & visuals
+└── README.md # Project documentation
+
+yaml
+Copy code
+
+---
+
+## 🙋 About Me  
+I am a **Data Science fresher** with strong foundations in Python, machine learning, and data visualization.  
+This project demonstrates my ability to:  
+- Clean and analyze real-world datasets  
+- Build and evaluate predictive models  
+- Communicate insights clearly with visuals and structured reporting  
+
+---
+
+✨ *This repository is part of my data science portfolio to showcase my skills for recruitment opportu
