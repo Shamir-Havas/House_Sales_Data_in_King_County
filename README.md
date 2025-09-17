@@ -23,25 +23,20 @@ The goal is to **predict housing prices** and showcase skills in **data analysis
 - Records: ~21,600 house sales in King County, USA  
 - Features: Bedrooms, bathrooms, living space, lot size, floors, waterfront, view, condition, grade, year built, renovated year, zipcode, latitude/longitude, and sale price  
 
-### 🔎 Dataset Preview  
-![Dataset Preview](images/dataset_head.png)  
-*A sample of the King County dataset*  
-
----
 
 ## 🔬 Exploratory Data Analysis (EDA)  
 
 ### Distribution of House Prices  
-![Price Distribution](images/price_distribution.png)  
+![Price Distribution](https://github.com/Shamir-Havas/House_Sales_Data_in_King_County/blob/main/Distribution%20of%20House%20Prices.png)  
 
 ### Correlation Heatmap  
-![Correlation Heatmap](images/correlation_heatmap.png)  
+![Correlation Heatmap](https://github.com/Shamir-Havas/House_Sales_Data_in_King_County/blob/main/Correlation%20Heatmap.png)  
 
 ### sqft_above vs Price  
-![Sqft vs Price](images/sqft_vs_price.png)  
+![Sqft vs Price](https://github.com/Shamir-Havas/House_Sales_Data_in_King_County/blob/main/sqft_above%20vs%20Price.png)  
 
 ### Waterfront vs Price (Boxplot)  
-![Waterfront Boxplot](images/waterfront_boxplot.png)  
+![Waterfront Boxplot](https://github.com/Shamir-Havas/House_Sales_Data_in_King_County/blob/main/Waterfront%20vs%20Price%20(Boxplot).png)  
 
 ---
 
